@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import './NewsDetails.css'
 import { Link } from 'react-router-dom'
+import Hoc from '../HOC/Hoc'
 
 
 function NewsDetails() {
@@ -27,7 +28,7 @@ function NewsDetails() {
         }
     }
     useEffect(() =>{
-        axios.get('https://newsapi.org/v2/everything?q=tesla&from=2021-12-14&sortBy=publishedAt&apiKey=31e92b13ac7b4a93a3891f0daa8df7be')
+        axios.get('https://newsapi.org/v2/everything?q=tesla&from=2021-12-17&sortBy=publishedAt&apiKey=42ebed0ba5284a3c81d142e7e9b04104')
         .then(res =>{
             setArticles(res.data.articles)
         })
@@ -55,4 +56,4 @@ function NewsDetails() {
     )
 }
 
-export default NewsDetails
+export default Hoc(NewsDetails)

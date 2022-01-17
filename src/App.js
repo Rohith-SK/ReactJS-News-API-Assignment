@@ -12,6 +12,10 @@ import TitleInfo from './Components/Title Info Page/TitleInfo';
 import TitleInfoDetails from './Components/Title Info Details Page/TitleInfoDetails';
 import RangeTitle from './Components/Range Title Page/RangeTitle'
 import RangeTitleDetails from './Components/Range Title Details Page/RangeTitleDetails';
+import About from './Components/Pages/About/About';
+import Team from './Components/Pages/Team/Team';
+import Works from './Components/Pages/Works/Works';
+
 
 
 
@@ -28,6 +32,9 @@ function App() {
           <Route path='/titleinfodetails' element={<TitleInfoDetails />} />
           <Route path='/rangetitle' element={<RangeTitle />} />
           <Route path='/rangetitledetails' element={<RangeTitleDetails />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/teammembers' element={<Team />} />
+          <Route path='/works' element={<Works />} />
         </Routes>
       </Router>
     </div>

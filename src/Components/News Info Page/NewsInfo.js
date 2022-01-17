@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import './NewsInfo.css'
 import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom'
+import Hoc from '../HOC/Hoc'
 
 
 
@@ -12,7 +13,7 @@ function NewsInfo() {
     const [searchDate,setSearchDate] = useState(new Date)
     const navigate = useNavigate()
     useEffect(() =>{
-        axios.get('https://newsapi.org/v2/everything?q=tesla&from=2021-12-14&sortBy=publishedAt&apiKey=31e92b13ac7b4a93a3891f0daa8df7be')
+        axios.get('https://newsapi.org/v2/everything?q=tesla&from=2021-12-17&sortBy=publishedAt&apiKey=42ebed0ba5284a3c81d142e7e9b04104')
         .then(res =>{
             console.log(res)
             setArticles(res.data.articles)
@@ -61,5 +62,5 @@ function NewsInfo() {
     )
 }
 
-export default NewsInfo
+export default Hoc(NewsInfo)
 

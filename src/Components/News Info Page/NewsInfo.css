@@ -20,7 +20,7 @@
     color: #04703a;
     position: relative;
     top: -40px;
-    left: 300px;
+    left: 320px;
     padding-left: 10px;;
 
 }
@@ -74,7 +74,7 @@
     font-size: 20px;
     position: relative;
     top: -82px;
-    left: 600px;
+    left: 640px;
 }
 
 .range-date-search-button:hover, :focus{
