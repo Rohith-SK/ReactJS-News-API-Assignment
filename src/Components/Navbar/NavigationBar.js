@@ -10,9 +10,8 @@ function NavigationBar() {
                 <Container className='navbar-container'>
                     <Navbar.Brand href='/' className='navbar-brand' style={{'color':'white'}}>ReactJS</Navbar.Brand>
                     <Nav>
-                        <NavLink  href='/' className='nav-links' style={{'color':'white'}}>Home</NavLink>
+                        <NavLink  href='/newsinfo' className='nav-links' style={{'color':'white'}}>Home</NavLink>
                         <NavLink href='/about' className='nav-links' style={{'color':'white'}}>About</NavLink>
-                        <NavLink href='/newsinfo' className='nav-links' style={{'color':'white'}}>Title</NavLink>
                         <NavLink href='/works' className='nav-links' style={{'color':'white'}}>Works</NavLink>
                         <NavLink href='/teammembers' className='nav-links' style={{'color':'white'}}>Team</NavLink>
                         <NavLink className='nav-links' style={{'color':'white'}}>{localStorage.getItem('username')}</NavLink>
