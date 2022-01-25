@@ -13,7 +13,7 @@ function NewsInfo() {
     const [searchDate,setSearchDate] = useState(new Date)
     const navigate = useNavigate()
     useEffect(() =>{
-        axios.get('https://newsapi.org/v2/everything?q=tesla&from=2021-12-17&sortBy=publishedAt&apiKey=42ebed0ba5284a3c81d142e7e9b04104')
+        axios.get('https://newsapi.org/v2/everything?q=tesla&from=2021-12-25&sortBy=publishedAt&apiKey=42ebed0ba5284a3c81d142e7e9b04104')
         .then(res =>{
             console.log(res)
             setArticles(res.data.articles)
@@ -63,4 +63,3 @@ function NewsInfo() {
 }
 
 export default Hoc(NewsInfo)
-
